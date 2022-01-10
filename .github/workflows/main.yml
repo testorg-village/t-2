@@ -1,6 +1,6 @@
 name: pull ejsimage package
-on: 
-  workflow_dispatch:
+on: pull_request
+  
 
 
 jobs:
@@ -13,4 +13,4 @@ jobs:
 
 
       - name: Push the Docker image to the registry
-        run: docker pull ghcr.io/testorg-village/pkg-5
+        run: docker pull ghcr.io/testorg-village/pkg-6
