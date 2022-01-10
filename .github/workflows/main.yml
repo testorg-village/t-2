@@ -1,5 +1,5 @@
 name: pull ejsimage package
-on: pull_request
+on: push
 
 
 jobs:
