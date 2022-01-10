@@ -1,0 +1,15 @@
+name: pull ejsimage package
+on: pull-request
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub container Registry
+        run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+
+      - name: Push the Docker image to the registry
+        run: docker pull ghcr.io/testorg-village/pkg-5
