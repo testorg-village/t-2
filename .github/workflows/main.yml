@@ -1,5 +1,6 @@
 name: pull ejsimage package
-on: pull_request
+on: 
+  workflow_dispatch:
 
 
 jobs:
