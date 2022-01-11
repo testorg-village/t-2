@@ -13,4 +13,4 @@ jobs:
 
 
       - name: Push the Docker image to the registry
-        run: docker pull ghcr.io/testorg-village/test-2
+        run: docker pull ghcr.io/testorg-village/pkg-5
